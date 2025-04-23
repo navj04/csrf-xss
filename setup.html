@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <h1>Registering Service Worker...</h1>
-    <script>
-      navigator.serviceWorker.register('./service-worker.js', { scope: './' })
-        .then(() => {
-          alert('Service Worker registered! Redirecting...');
-          location.href = 'https://engineering.quoccacorp.com/posts/5a1c5725-229d-4a3b-a840-a1233a12a7c0';
-        })
-        .catch(err => alert('Failed to register: ' + err));
-    </script>
-  </body>
-</html>
+<head>
+  <script src=analytics.js></script>
+</head>
+<body>
+</body>
